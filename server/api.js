@@ -12,11 +12,13 @@ exports.test = function(req, res) {
 };
 
 exports.create = function(req, res) {
-    var username = req.query.username;
-    var userRef = ref.child("user/"+username);
-    userRef.set({
-        date_of_birth: "Jan 24 1993",
-        full_name: "Alan Turting"
+    ref.child("items").push().set({
+        "armor": 0,
+        "attack": 0,
+        "description": "Gold",
+        "name": "Gold",
+        "sprite": "gold.png",
+        "id": "1"
     });
 };
 
