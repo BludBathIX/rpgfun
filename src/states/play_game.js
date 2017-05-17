@@ -34,12 +34,9 @@ App.PlayGameState = (function () {
         // our maps tilemap
         this.game.global.maps = this.game.assetManager.assets.tilemap.maps;
 
-        this.game.world.sendToBack(this.game.global.maps.layers['CrossRoad:Grass']);
-
         // resize world to fit the layers
         this.game.global.maps.layers['CrossRoad:Grass'].resizeWorld();
 
-        this.game.world.bringToTop(this.game.global.maps.layers['CrossRoad:Road']);
         this.key1 = this.game.input.keyboard.addKey(Phaser.Keyboard.BACKWARD_SLASH);
         this.key1.onDown.add(fn.prototype.enterMessage, this);
 
