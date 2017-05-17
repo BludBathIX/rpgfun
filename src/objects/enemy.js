@@ -6,6 +6,7 @@ App.Enemy = (function () {
 
     var fn = function (game, x, y, args) {
         Phaser.Sprite.call(this, game, x, y, args.image_key);
+        this.anchor.setTo(0.5);
         args.init(this, args);
 
         this.game.physics.arcade.enable(this);
