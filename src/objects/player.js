@@ -103,7 +103,7 @@ App.Player = (function () {
         if (!playerMoving) {
             this.animations.stop();
         }
-        this.game.physics.arcade.collide(this, this.game.global.maps.layers.Collisions);
+        this.game.physics.arcade.collide(this, this.game.global.maps.layers["CrossRoad:Collision"]);
         var g = this.game.global;
         var p = g.player.body;
         if (g.player.playerName && (g.vx != p.velocity.x || g.vy != p.velocity.y)) {
