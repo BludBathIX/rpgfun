@@ -459,6 +459,8 @@ App.AssetManager = (function () {
                     }
                     tilemap.map.setCollisionBetween(1, collision_id_last + 1, true, tiled_layer_name);
                 }
+
+                tilemap.layers[tiled_layer_name].visible = tilemap_data.layers[layer].visible;
             }
             else if (tilemap_data.layers[layer].type == "objectgroup") {
                 var objects = tilemap_data.layers[layer].objects;
