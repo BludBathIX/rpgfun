@@ -178,6 +178,19 @@
             },
          "tilewidth":16,
          "transparentcolor":"#ff00ff"
+        }, 
+        {
+         "columns":72,
+         "firstgid":1768,
+         "image":"..\/images\/rpgchars.png",
+         "imageheight":72,
+         "imagewidth":1152,
+         "margin":0,
+         "name":"rpgchars",
+         "spacing":0,
+         "tilecount":288,
+         "tileheight":18,
+         "tilewidth":16
         }],
  "tilewidth":16,
  "version":1,
