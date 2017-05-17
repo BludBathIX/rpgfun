@@ -68,7 +68,7 @@ App.Enemy = (function () {
         this.body.velocity.y = directions[this.direction].y;
 
         // TODO: collision handling
-        // this.game.physics.arcade.collide(this, this.game.global.forest.layers.Collisions);
+        this.game.physics.arcade.collide(this, this.game.global.maps.layers["CrossRoad:Collision"]);
     };
 
     return fn;
