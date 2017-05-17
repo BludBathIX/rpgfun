@@ -531,15 +531,16 @@ App.AssetManager = (function () {
                                 }
                             }
                         };
+                        var classType = eval(type);
                         tilemap.map.createFromObjects(
                             tilemap_data.layers[layer].name,
                             objects[i].name,
-                            args,      // Sprite image key name
-                            undefined, // Sprite frame name
+                            (classType) ? args : args.image_key,      // Sprite image key name
+                            args.frame, // Sprite frame name
                             true,
                             false,
                             this.game.world,
-                            eval(type),
+                            classType,
                             true
                         );
                     }
