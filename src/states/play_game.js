@@ -28,15 +28,17 @@ App.PlayGameState = (function () {
     fn.prototype.create = function () {
         console.log("PlayGameState.create Running ...");
 
-        // our forest tilemap
-        this.game.global.forest = this.game.assetManager.assets.tilemap.forest;
+        console.log(this.game.assetManager.assets.tilemap);
 
-        this.game.world.sendToBack(this.game.global.forest.layers.BackGround);
+        // our maps tilemap
+        this.game.global.maps = this.game.assetManager.assets.tilemap.maps;
+
+        this.game.world.sendToBack(this.game.global.maps.layers['CrossRoad:Grass']);
 
         // resize world to fit the layers
-        this.game.global.forest.layers.BackGround.resizeWorld();
+        this.game.global.maps.layers['CrossRoad:Grass'].resizeWorld();
 
-        this.game.world.bringToTop(this.game.global.forest.layers.ForeGroundTop);
+        this.game.world.bringToTop(this.game.global.maps.layers['CrossRoad:Road']);
         this.key1 = this.game.input.keyboard.addKey(Phaser.Keyboard.BACKWARD_SLASH);
         this.key1.onDown.add(fn.prototype.enterMessage, this);
 
