@@ -12,9 +12,7 @@ App.Enemy = (function () {
         this.frame = 0;
         this.collideWorldBounds = true;
         this.speed = 50;
-        this.direction = Math.floor(
-                Math.random() * (Math.floor(3) - Math.ceil(0) + 1)
-            ) + 0;
+        this.direction = 2;
         this.time = 0;
     };
 
@@ -71,13 +69,13 @@ App.Enemy = (function () {
         if (this.body.velocity.y >= 50 && this.body.y + this.body.velocity.y > (this.game.global.maps.map.heightInPixels+30)) {
             this.body.velocity.y = 0;
         }
-        if (this.body.velocity.y <= -50 && this.body.y + this.body.velocity.y > -30) {
+        if (this.body.velocity.y <= -50 && this.body.y + this.body.velocity.y < -50) {
             this.body.velocity.y = 0;
         }
         if (this.body.velocity.x >= 50 && this.body.x + this.body.velocity.x > (this.game.global.maps.map.widthInPixels+30)) {
             this.body.velocity.x = 0;
         }
-        if (this.body.velocity.x <= -50 && this.body.x + this.body.velocity.x > -30) {
+        if (this.body.velocity.x <= -50 && this.body.x + this.body.velocity.x < -50) {
             this.body.velocity.x = 0;
         }
 
