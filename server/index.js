@@ -10,7 +10,7 @@ var http    = require("http");
 var api     = require("./api.js");
 
 //get port from environment and store in Express.
-var port = normalizePort(process.env.PORT || 8888);
+var port = normalizePort(process.env.PORT || 9999);
 app.set("port", port);
 
 //setup static files
