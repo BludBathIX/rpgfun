@@ -36,6 +36,11 @@ App.Player = (function () {
     fn.prototype = Object.create(Phaser.Sprite.prototype);
     fn.prototype.constructor = fn;
 
+    fn.prototype.getCollisionMaps = function () { return this.collision_maps; };
+    fn.prototype.setCollisionMaps = function (maps) {
+        this.collision_maps = maps;
+    };
+
     fn.prototype.update = function () {
         var playerMoving = false;
         var speed = this.speed;
@@ -103,7 +108,14 @@ App.Player = (function () {
         if (!playerMoving) {
             this.animations.stop();
         }
-        this.game.physics.arcade.collide(this, this.game.global.maps.layers["CrossRoad:Collision"]);
+
+        // collide with map is we have one set
+        if (this.getCollisionMaps()) {
+            this.getCollisionMaps().forEach((map) => {
+                this.game.physics.arcade.collide(this, this.game.global.maps.layers[map]);
+            });
+        }
+
         var g = this.game.global;
         var p = g.player.body;
         if (g.player.playerName && (g.vx != p.velocity.x || g.vy != p.velocity.y)) {

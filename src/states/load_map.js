@@ -19,9 +19,11 @@ App.LoadMapState = (function () {
         this.map              = map;
         this.map_re           = new RegExp(map);
         this.map_bottom_layer = _.find(Object.keys(this.game.global.maps.layers), (layer) => { return layer.match(this.map_re); });
+        this.collision_maps     = _.filter(Object.keys(this.game.global.maps.layers), (layer) => { console.log(layer); console.log(this.game.global.maps.layers[layer]); return layer.match(this.map_re) && this.game.global.maps.layers[layer].layer.properties.isCollisionLayer; });
 
         console.log("Loading Map " + map);
         this.game.assetManager.filterlayers("maps", this.map);
+        this.game.global.player.setCollisionMaps(this.collision_maps);
     };
 
     fn.prototype.create = function () {
