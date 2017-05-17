@@ -24,13 +24,14 @@
     "eureca.io": "^0.6.42",
     "express": "^4.14.0",
     "firebase-admin": "^4.1.0",
-    "glob":"^4.5.3",
+    "glob": "^4.5.3",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.1.0",
     "path": "^0.12.7"
   },
   "devDependencies": {
     "lodash": "^4.17.0",
-    "phaser": "^2.6.2"
+    "phaser": "^2.6.2",
+    "phaser-ce": "^2.7.9"
   }
 }
