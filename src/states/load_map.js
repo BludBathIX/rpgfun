@@ -8,7 +8,6 @@ App.LoadMapState = (function () {
     var fn = function (game) {
         console.log("LoadMapState.constructor Running...");
         Phaser.State.call(this, game);
-        this.map = map;
     };
 
     fn.prototype = Object.create(Phaser.State.prototype);
