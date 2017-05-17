@@ -69,7 +69,7 @@
         {
          "draworder":"topdown",
          "height":20,
-         "name":"Enemies",
+         "name":"CrossRoad:Enemies",
          "objects":[
                 {
                  "gid":1837,
