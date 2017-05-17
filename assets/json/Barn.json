@@ -41,7 +41,7 @@
         {
          "columns":57,
          "firstgid":1,
-         "image":"multi-player\/assets\/images\/roguelikeSheet_transparent.png",
+         "image":"..\/images\/roguelikeSheet_transparent.png",
          "imageheight":526,
          "imagewidth":968,
          "margin":0,
