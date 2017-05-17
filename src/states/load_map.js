@@ -5,7 +5,7 @@ App.LoadMapState = (function () {
     "use strict";
 
     console.log("LoadMapState Compiling ...");
-    var fn = function (game, map = "CrossRoad") {
+    var fn = function (game) {
         console.log("LoadMapState.constructor Running...");
         Phaser.State.call(this, game);
         this.map = map;
