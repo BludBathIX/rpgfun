@@ -98,10 +98,6 @@
                  "height":18,
                  "id":2,
                  "name":"enemy1",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"App.Enemy",
                  "visible":true,
@@ -114,16 +110,36 @@
                  "height":16,
                  "id":3,
                  "name":"Spawner",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"App.Spawner",
                  "visible":true,
                  "width":16,
                  "x":206.5,
                  "y":303
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":20,
+         "name":"CrossRoad:Player",
+         "objects":[
+                {
+                 "gid":1913,
+                 "height":18,
+                 "id":5,
+                 "name":"player",
+                 "rotation":0,
+                 "type":"App.Player",
+                 "visible":true,
+                 "width":16,
+                 "x":143.618716212018,
+                 "y":160.618716212018
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -140,6 +156,10 @@
          "properties":
             {
              "Collision":"1"
+            },
+         "propertytypes":
+            {
+             "Collision":"string"
             },
          "type":"tilelayer",
          "visible":true,
@@ -158,12 +178,8 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":5,
+ "nextobjectid":6,
  "orientation":"orthogonal",
- "properties":
-    {
-
-    },
  "renderorder":"right-down",
  "tileheight":16,
  "tilesets":[
@@ -175,10 +191,6 @@
          "imagewidth":968,
          "margin":0,
          "name":"roguelikeSheet_transparent",
-         "properties":
-            {
-
-            },
          "spacing":1,
          "tilecount":1767,
          "tileheight":16,
@@ -276,10 +288,6 @@
          "imagewidth":1152,
          "margin":0,
          "name":"rpgchars",
-         "properties":
-            {
-
-            },
          "spacing":0,
          "tilecount":288,
          "tileheight":18,
