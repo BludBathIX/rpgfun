@@ -549,5 +549,21 @@ App.AssetManager = (function () {
         this.assets.tilemap[key] = tilemap;
     };
 
+    // filterlayers
+    fn.prototype.filterlayers = function(key, prefix) {
+        console.log("AssetManager.filterlayers", key, prefix);
+        if (this.assets.tilemap[key] && this.assets.tilemap[key].layers) {
+            console.debug("LAYERS:", this.assets.tilemap[key].layers);
+            for (var layer in this.assets.tilemap[key].layers) {
+                var l = this.assets.tilemap[key].layers[layer];
+                console.debug("name or prefix?",layer,l,prefix);
+                if (layer.substr(0, 1 + prefix.length) == prefix + ":")
+                    l.visible = true;
+                else
+                    l.visible = false;
+            }
+        }
+    };
+
     return fn;
 })();
