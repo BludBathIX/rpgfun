@@ -469,6 +469,7 @@ App.AssetManager = (function () {
                     var type = objects[i].type;
                     var args = {
                         image_key    : objects[i].name,
+                        frame        : null,
                         tiled_object : objects[i],
                         anim         : {},
                     };
@@ -478,6 +479,7 @@ App.AssetManager = (function () {
                         if (tinfo) {
                             var tileset = tinfo[2];
                             args.image_key = tilesets[tileset].name;
+                            args.frame     = 'gid_' + object_gid + '_frame_0'; // start at first animation frame
                             var p = tilesets[tileset].tileproperties;
                             for (var tileid in p) {
                                 if (p[tileid].animation_name) {

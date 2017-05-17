@@ -5,12 +5,11 @@ App.Player = (function () {
     "use strict";
 
     var fn = function (game, x, y, args) {
-        Phaser.Sprite.call(this, game, x, y, args.image_key);
+        Phaser.Sprite.call(this, game, x, y, args.image_key, args.frame);
         args.init(this, args);
 
         this.game.global.player = this;
         this.game.physics.arcade.enable(this);
-        this.frame = 0;
         this.dpad = this.game.input.keyboard.createCursorKeys();
         this.runKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         this.collideWorldBounds = true;
