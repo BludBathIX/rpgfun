@@ -12,6 +12,8 @@ App.Enemy = (function () {
         this.frame = 0;
         this.collideWorldBounds = true;
         this.speed = 50;
+        this.direction = 0;
+        this.time = 0;
     };
 
 
@@ -20,15 +22,52 @@ App.Enemy = (function () {
 
     fn.prototype.update = function () {
         var speed = this.speed;
-        // this.debugText.text = "Enemy1";
-        // this.debugText.x = this.x;
-        // his.debugText.y = this.y - 20;
-        // his.usernameText.x = this.x;
-        // his.usernameText.y = this.y + 60;
 
-        this.body.velocity.x = 0;
-        this.body.velocity.y = -this.speed;
+        this.time++;
+        if (this.time > 180) {
+            this.time = 0;
+        }
 
+        var directions = [
+            { // UP
+                x: 0,
+                y: -this.speed
+            },
+            { // DOWN
+                x: 0,
+                y: this.speed
+            },
+            { // LEFT
+                x: -this.speed,
+                y: 0
+            },
+            { // RIGHT
+                x: this.speed,
+                y: 0
+            },
+            { // STOP
+                x: 0,
+                y: 0
+            }
+        ];
+
+        if (this.time === 0) {
+            var min = 0;
+            var max = 4;
+            this.direction = Math.floor(
+                Math.random() * (Math.floor(max) - Math.ceil(min) + 1)
+            ) + min;
+        }
+
+        // Stop player every second
+        if (this.time === 60) {
+            this.direction = 4;
+        }
+
+        this.body.velocity.x = directions[this.direction].x;
+        this.body.velocity.y = directions[this.direction].y;
+
+        // TODO: collision handling
         // this.game.physics.arcade.collide(this, this.game.global.forest.layers.Collisions);
     };
 
