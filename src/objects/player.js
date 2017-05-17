@@ -36,6 +36,12 @@ App.Player = (function () {
     fn.prototype = Object.create(Phaser.Sprite.prototype);
     fn.prototype.constructor = fn;
 
+    fn.prototype.getCurrentMap = function () { return this.map };
+    fn.prototype.setCurrentMap = function (map) {
+        this.map = map;
+    };
+
+
     fn.prototype.getCollisionMaps = function () { return this.collision_maps; };
     fn.prototype.setCollisionMaps = function (maps) {
         this.collision_maps = maps;

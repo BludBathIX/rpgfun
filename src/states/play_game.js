@@ -24,8 +24,6 @@ App.PlayGameState = (function () {
     fn.prototype.create = function () {
         console.log("PlayGameState.create Running ...");
 
-        console.log(this.game.assetManager.assets.tilemap);
-
         // our maps tilemap
         this.game.global.maps = this.game.assetManager.assets.tilemap.maps;
 
