@@ -67,16 +67,16 @@ App.Enemy = (function () {
 
         this.body.velocity.x = directions[this.direction].x;
         this.body.velocity.y = directions[this.direction].y;
-        if (this.body.velocity.y >= 50 && this.body.y + this.body.velocity.y > (this.game.global.maps.map.heightInPixels+30)) {
+        if (this.body.velocity.y > 0 && this.body.y + this.body.velocity.y > (this.game.global.maps.map.heightInPixels+30)) {
             this.body.velocity.y = 0;
         }
-        if (this.body.velocity.y <= -50 && this.body.y + this.body.velocity.y < -50) {
+        if (this.body.velocity.y < 0 && this.body.y + this.body.velocity.y < -50) {
             this.body.velocity.y = 0;
         }
-        if (this.body.velocity.x >= 50 && this.body.x + this.body.velocity.x > (this.game.global.maps.map.widthInPixels+30)) {
+        if (this.body.velocity.x > 0 && this.body.x + this.body.velocity.x > (this.game.global.maps.map.widthInPixels+30)) {
             this.body.velocity.x = 0;
         }
-        if (this.body.velocity.x <= -50 && this.body.x + this.body.velocity.x < -50) {
+        if (this.body.velocity.x < 0 && this.body.x + this.body.velocity.x < -50) {
             this.body.velocity.x = 0;
         }
 
