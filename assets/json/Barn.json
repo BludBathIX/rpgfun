@@ -67,20 +67,6 @@
          "tilewidth":16,
          "transparentcolor":"#ff00ff"
         }, 
-        {
-         "columns":20,
-         "firstgid":1768,
-         "image":"..\/images\/RPGpack_sheet_32.png",
-         "imageheight":416,
-         "imagewidth":640,
-         "margin":0,
-         "name":"RPGpack_sheet_32",
-         "spacing":0,
-         "tilecount":260,
-         "tileheight":32,
-         "tilewidth":32,
-         "transparentcolor":"#ff00ff"
-        }],
  "tilewidth":16,
  "version":1,
  "width":30
