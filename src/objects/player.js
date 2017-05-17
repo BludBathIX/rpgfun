@@ -85,22 +85,20 @@ App.Player = (function () {
         if (this.dpad.left.isDown) {
             this.animations.play('left');
             this.body.velocity.x = -speed;
-            this.orient = 'left';
             playerMoving = true;
         }
         else if (this.dpad.right.isDown) {
             this.animations.play('right');
             this.body.velocity.x = speed;
-            this.orient = 'right';
             playerMoving = true;
         }
         if (this.dpad.up.isDown) {
-            this.animations.play(this.orient);
+            this.animations.play('up');
             this.body.velocity.y = -speed;
             playerMoving = true;
         }
         else if (this.dpad.down.isDown) {
-            this.animations.play(this.orient);
+            this.animations.play('down');
             this.body.velocity.y = speed;
             playerMoving = true;
         }

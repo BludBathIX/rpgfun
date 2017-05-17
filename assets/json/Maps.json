@@ -157,7 +157,7 @@
          "name":"CrossRoad:Player",
          "objects":[
                 {
-                 "gid":1913,
+                 "gid":1912,
                  "height":18,
                  "id":5,
                  "name":"player",
@@ -169,6 +169,14 @@
                  "y":160.618716212018
                 }],
          "opacity":1,
+         "properties":
+            {
+             "animation_name":"down"
+            },
+         "propertytypes":
+            {
+             "animation_name":"string"
+            },
          "type":"objectgroup",
          "visible":true,
          "width":20,
@@ -318,8 +326,106 @@
          "spacing":0,
          "tilecount":288,
          "tileheight":18,
+         "tileproperties":
+            {
+             "0":
+                {
+                 "animation_name":"up"
+                },
+             "144":
+                {
+                 "animation_name":"down"
+                },
+             "216":
+                {
+                 "animation_name":"left"
+                },
+             "72":
+                {
+                 "animation_name":"right"
+                }
+            },
+         "tilepropertytypes":
+            {
+             "0":
+                {
+                 "animation_name":"string"
+                },
+             "144":
+                {
+                 "animation_name":"string"
+                },
+             "216":
+                {
+                 "animation_name":"string"
+                },
+             "72":
+                {
+                 "animation_name":"string"
+                }
+            },
          "tiles":
             {
+             "0":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }]
+                },
+             "144":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":144
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":145
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":146
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":145
+                        }]
+                },
+             "216":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":216
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":217
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":218
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":217
+                        }]
+                },
              "69":
                 {
                  "animation":[
@@ -338,6 +444,26 @@
                         {
                          "duration":100,
                          "tileid":70
+                        }]
+                },
+             "72":
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":72
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":73
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":74
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":73
                         }]
                 }
             },
