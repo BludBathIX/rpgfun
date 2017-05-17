@@ -80,7 +80,6 @@ App.Enemy = (function () {
             this.body.velocity.x = 0;
         }
 
-        // TODO: collision handling
         this.game.physics.arcade.collide(this, this.game.global.maps.layers["CrossRoad:Collision"]);
     };
 
