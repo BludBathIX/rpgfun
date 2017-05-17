@@ -1,6 +1,130 @@
 { "height":20,
  "layers":[
         {
+         "draworder":"topdown",
+         "height":20,
+         "name":"Barn:Portals",
+         "objects":[
+                {
+                 "gid":1764,
+                 "height":16,
+                 "id":9,
+                 "name":"portal_crossroad_barn",
+                 "properties":
+                    {
+                     "dst_map":"CrossRoad",
+                     "src_map":"Barn"
+                    },
+                 "propertytypes":
+                    {
+                     "dst_map":"string",
+                     "src_map":"string"
+                    },
+                 "rotation":0,
+                 "type":"App.Portal",
+                 "visible":true,
+                 "width":16,
+                 "x":302.694090598397,
+                 "y":200.008947989809
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":20,
+         "name":"House:Portals",
+         "objects":[
+                {
+                 "gid":1764,
+                 "height":16,
+                 "id":7,
+                 "name":"portal_crossroad_house",
+                 "properties":
+                    {
+                     "dst_map":"CrossRoad",
+                     "src_map":"House"
+                    },
+                 "propertytypes":
+                    {
+                     "dst_map":"string",
+                     "src_map":"string"
+                    },
+                 "rotation":0,
+                 "type":"App.Portal",
+                 "visible":true,
+                 "width":16,
+                 "x":3.80637544273908,
+                 "y":158.997328030821
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":20,
+         "name":"CrossRoad:Portals",
+         "objects":[
+                {
+                 "gid":1766,
+                 "height":16,
+                 "id":6,
+                 "name":"portal_crossroad_house",
+                 "properties":
+                    {
+                     "dst_map":"House",
+                     "src_map":"CrossRoad"
+                    },
+                 "propertytypes":
+                    {
+                     "dst_map":"string",
+                     "src_map":"string"
+                    },
+                 "rotation":0,
+                 "type":"App.Portal",
+                 "visible":true,
+                 "width":16,
+                 "x":302.0727024172,
+                 "y":162.725657118002
+                }, 
+                {
+                 "gid":1766,
+                 "height":16,
+                 "id":8,
+                 "name":"portal_crossroad_barn",
+                 "properties":
+                    {
+                     "dst_map":"Barn",
+                     "src_map":"CrossRoad"
+                    },
+                 "propertytypes":
+                    {
+                     "dst_map":"string",
+                     "src_map":"string"
+                    },
+                 "rotation":0,
+                 "type":"App.Portal",
+                 "visible":true,
+                 "width":16,
+                 "x":3.18498726154228,
+                 "y":200.008947989809
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }, 
+        {
          "data":[916, 916, 916, 916, 3221226388, 3221226388, 916, 916, 916, 916, 2684355476, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 2684355476, 2684355476, 916, 3221226388, 916, 916, 916, 2684355476, 3221226388, 2684355476, 2684355476, 2684355476, 2684355476, 916, 916, 916, 916, 3221226388, 916, 2684355476, 2684355476, 2684355476, 2684355476, 916, 916, 916, 916, 916, 916, 916, 3221226388, 3221226388, 3221226388, 2684355476, 916, 916, 916, 916, 916, 2684355476, 916, 916, 2684355476, 2684355476, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 916, 916, 2684355476, 2684355476, 916, 3221226388, 916, 2684355476, 2684355476, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 916, 2684355476, 2684355476, 916, 3221226388, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 2684355476, 916, 3221226388, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 916, 2684355476, 916, 3221226388, 2684355476, 2684355476, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 2684355476, 3221226388, 3221226388, 3221226388, 916, 916, 2684355476, 1610613652, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 2684355476, 916, 916, 916, 916, 2684355476, 2684355476, 916, 1610613652, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 2684355476, 916, 1610613652, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 1610613652, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 2684355476, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 3221226388, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 916, 916, 916, 916, 916, 916, 3221226388, 3221226388, 3221226388, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 916, 3221226388, 3221226388, 916, 3221226388, 1610613652, 916, 916, 916, 916, 916, 2684355476, 3221226388, 916, 916, 916, 916, 916, 3221226388, 3221226388, 3221226388, 3221226388, 3221226388, 3221226388, 916, 3221226388, 3221226388, 916, 916, 916, 916, 3221226388, 916, 916, 3221226388, 916, 916, 916, 3221226388, 916, 916, 916, 2684355476, 3221226388, 3221226388, 916, 3221226388, 3221226388, 916, 2684355476, 2684355476, 916, 916, 916, 3221226388, 916, 916, 3221226388, 3221226388, 916, 916, 916, 3221226388, 916, 3221226388, 3221226388, 916, 916, 916],
          "height":20,
          "name":"Barn:Ground",
@@ -39,7 +163,7 @@
          "name":"House:Bottom Ground",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -53,8 +177,12 @@
             {
              "isCollisionLayer":"true"
             },
+         "propertytypes":
+            {
+             "isCollisionLayer":"string"
+            },
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -65,7 +193,7 @@
          "name":"House:Floor",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -79,8 +207,12 @@
             {
              "isCollisionLayer":"true"
             },
+         "propertytypes":
+            {
+             "isCollisionLayer":"string"
+            },
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -91,7 +223,7 @@
          "name":"House:Tree\/Path\/House Interior",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -102,7 +234,7 @@
          "name":"House:Roof",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -113,7 +245,7 @@
          "name":"House:Ladder Roof Decoration",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -124,7 +256,7 @@
          "name":"CrossRoad:Grass",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -135,7 +267,7 @@
          "name":"CrossRoad:Road",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -150,10 +282,6 @@
                  "height":18,
                  "id":2,
                  "name":"enemy1",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"App.Enemy",
                  "visible":true,
@@ -166,10 +294,6 @@
                  "height":16,
                  "id":3,
                  "name":"Spawner",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"App.Spawner",
                  "visible":true,
@@ -179,7 +303,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -194,10 +318,6 @@
                  "height":18,
                  "id":5,
                  "name":"player",
-                 "properties":
-                    {
-
-                    },
                  "rotation":0,
                  "type":"App.Player",
                  "visible":true,
@@ -215,7 +335,7 @@
              "animation_name":"string"
             },
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -229,8 +349,12 @@
             {
              "isCollisionLayer":"true"
             },
+         "propertytypes":
+            {
+             "isCollisionLayer":"string"
+            },
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
@@ -241,17 +365,13 @@
          "name":"CrossRoad:Trees",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":20,
          "x":0,
          "y":0
         }],
- "nextobjectid":6,
+ "nextobjectid":10,
  "orientation":"orthogonal",
- "properties":
-    {
-
-    },
  "renderorder":"right-down",
  "tileheight":16,
  "tilesets":[
@@ -263,10 +383,6 @@
          "imagewidth":968,
          "margin":0,
          "name":"roguelikeSheet_transparent",
-         "properties":
-            {
-
-            },
          "spacing":1,
          "tilecount":1767,
          "tileheight":16,
@@ -364,10 +480,6 @@
          "imagewidth":1152,
          "margin":0,
          "name":"rpgchars",
-         "properties":
-            {
-
-            },
          "spacing":0,
          "tilecount":288,
          "tileheight":18,
